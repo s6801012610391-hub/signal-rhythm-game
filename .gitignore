@@ -1,0 +1,10 @@
+# Generated MATLAB runtime and captured audio / game logs
+matlab/RhythmGameRuntime.m
+matlab/Backup/
+matlab/scorelogs/
+matlab/diagnostics_yin/
+*.asv
+*.autosave
+*.m~
+.DS_Store
+Thumbs.db

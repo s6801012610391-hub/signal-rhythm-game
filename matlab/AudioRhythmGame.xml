@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<MATLABApp schemaVersion='1.0.0' release='R2026b.0' minRelease='R2026b'>
+    <UIFigure name='UIFigure'>
+        <Color>[0.0313725490196078 0.0509803921568627 0.0901960784313725]</Color>
+        <Name>'SIGNAL RHYTHM GAME'</Name>
+        <Position>[70 45 1180 700]</Position>
+        <Children>
+            <UIAxes name='GameAxes'>
+        <FontName>'Bahnschrift'</FontName>
+                <Color>[0.0313725490196078 0.0509803921568627 0.0901960784313725]</Color>
+                <Position>[28 110 776 490]</Position>
+                <XColor>[0.149019607843137 0.223529411764706 0.301960784313725]</XColor>
+                <YColor>[0.149019607843137 0.223529411764706 0.301960784313725]</YColor>
+            </UIAxes>
+            <Button name='LoadCSVButton'>
+        <FontName>'Bahnschrift'</FontName>
+                <BackgroundColor>[0.0627450980392157 0.105882352941176 0.164705882352941]</BackgroundColor>
+                <ButtonPushedFcn>LoadCSVButtonPushed</ButtonPushedFcn>
+                <FontColor>[0.941176470588235 0.956862745098039 0.972549019607843]</FontColor>
+                <FontSize>14</FontSize>
+                <FontWeight>'bold'</FontWeight>
+                <Position>[36 31 210 50]</Position>
+                <Text>'Load CSV'</Text>
+            </Button>
+            <Button name='StartGameButton'>
+        <FontName>'Bahnschrift'</FontName>
+                <BackgroundColor>[0.0862745098039216 0.850980392156863 0.92156862745098]</BackgroundColor>
+                <ButtonPushedFcn>StartGameButtonPushed</ButtonPushedFcn>
+                <FontColor>[0.0313725490196078 0.0509803921568627 0.0901960784313725]</FontColor>
+                <FontSize>14</FontSize>
+                <FontWeight>'bold'</FontWeight>
+                <Position>[262 31 290 50]</Position>
+                <Text>'Start Game'</Text>
+            </Button>
+            <Button name='StopButton'>
+        <FontName>'Bahnschrift'</FontName>
+                <BackgroundColor>[0.231372549019608 0.105882352941176 0.149019607843137]</BackgroundColor>
+                <ButtonPushedFcn>StopButtonPushed</ButtonPushedFcn>
+                <FontColor>[1 0.458823529411765 0.607843137254902]</FontColor>
+                <FontSize>14</FontSize>
+                <FontWeight>'bold'</FontWeight>
+                <Position>[568 31 210 50]</Position>
+                <Text>'Stop'</Text>
+            </Button>
+            <Label name='ComboLabel'>
+                <BackgroundColor>[0.0313725490196078 0.0509803921568627 0.0901960784313725]</BackgroundColor>
+                <FontColor>[0.0862745098039216 0.850980392156863 0.92156862745098]</FontColor>
+                <FontName>'Bahnschrift'</FontName>
+                <FontSize>30</FontSize>
+                <FontWeight>'bold'</FontWeight>
+                <Position>[838 410 310 50]</Position>
+                <Text>'0'</Text>
+            </Label>
+            <Label name='CurrentNoteLabel'>
+                <BackgroundColor>[0.0313725490196078 0.0509803921568627 0.0901960784313725]</BackgroundColor>
+                <FontColor>[0.941176470588235 0.956862745098039 0.972549019607843]</FontColor>
+                <FontName>'Bahnschrift'</FontName>
+                <FontSize>22</FontSize>
+                <FontWeight>'bold'</FontWeight>
+                <Position>[838 156 310 42]</Position>
+                <Text>'Load a beatmap'</Text>
+                <Visible>'off'</Visible>
+            </Label>
+            <Label name='ScoreLabel'>
+                <BackgroundColor>[0.0313725490196078 0.0509803921568627 0.0901960784313725]</BackgroundColor>
+                <FontColor>[0.941176470588235 0.956862745098039 0.972549019607843]</FontColor>
+                <FontName>'Bahnschrift'</FontName>
+                <FontSize>34</FontSize>
+                <FontWeight>'bold'</FontWeight>
+                <Position>[838 496 310 56]</Position>
+                <Text>'0'</Text>
+            </Label>
+            <Label name='SongLabel'>
+                <BackgroundColor>[0.0313725490196078 0.0509803921568627 0.0901960784313725]</BackgroundColor>
+                <FontColor>[0.941176470588235 0.956862745098039 0.972549019607843]</FontColor>
+                <FontName>'Bahnschrift'</FontName>
+                <FontSize>14</FontSize>
+                <FontWeight>'normal'</FontWeight>
+                <Position>[838 600 310 36]</Position>
+                <Text>'Select a CSV beatmap'</Text>
+                <WordWrap>'on'</WordWrap>
+            </Label>
+            <Label name='HitLabel'>
+                <BackgroundColor>[0.0313725490196078 0.0509803921568627 0.0901960784313725]</BackgroundColor>
+                <FontColor>[0.129411764705882 0.909803921568627 0.67843137254902]</FontColor>
+                <FontName>'Bahnschrift'</FontName>
+                <FontSize>22</FontSize>
+                <FontWeight>'bold'</FontWeight>
+                <Position>[838 254 148 38]</Position>
+                <Text>'Hit: 0'</Text>
+            </Label>
+            <Label name='MissLabel'>
+                <BackgroundColor>[0.0313725490196078 0.0509803921568627 0.0901960784313725]</BackgroundColor>
+                <FontColor>[1 0.458823529411765 0.607843137254902]</FontColor>
+                <FontName>'Bahnschrift'</FontName>
+                <FontSize>22</FontSize>
+                <FontWeight>'bold'</FontWeight>
+                <Position>[1000 254 148 38]</Position>
+                <Text>'Miss: 0'</Text>
+            </Label>
+            <Label name='JudgementLabel'>
+                <BackgroundColor>[0.0313725490196078 0.0509803921568627 0.0901960784313725]</BackgroundColor>
+                <FontColor>[0.941176470588235 0.956862745098039 0.972549019607843]</FontColor>
+                <FontName>'Bahnschrift'</FontName>
+                <FontSize>28</FontSize>
+                <FontWeight>'bold'</FontWeight>
+                <HorizontalAlignment>'center'</HorizontalAlignment>
+                <Position>[838 312 310 68]</Position>
+                <Text>'READY'</Text>
+            </Label>
+            <Label name='TitleLabel'>
+                <BackgroundColor>[0.0313725490196078 0.0509803921568627 0.0901960784313725]</BackgroundColor>
+                <FontColor>[0.941176470588235 0.956862745098039 0.972549019607843]</FontColor>
+                <FontName>'Bahnschrift'</FontName>
+                <FontSize>30</FontSize>
+                <FontWeight>'bold'</FontWeight>
+                <Position>[36 638 780 42]</Position>
+                <Text>'SIGNAL RHYTHM GAME'</Text>
+            </Label>
+            <Label name='SubtitleLabel'>
+        <Visible>'off'</Visible>
+                <BackgroundColor>[0.0313725490196078 0.0509803921568627 0.0901960784313725]</BackgroundColor>
+                <FontColor>[0.941176470588235 0.956862745098039 0.972549019607843]</FontColor>
+                <FontName>'Bahnschrift'</FontName>
+                <FontSize>13</FontSize>
+                <FontWeight>'bold'</FontWeight>
+                <Position>[38 610 775 24]</Position>
+                <Text>''</Text>
+            </Label>
+            <Label name='PitchCaptionLabel'>
+        <FontSize>11</FontSize>
+                <BackgroundColor>[0.0313725490196078 0.0509803921568627 0.0901960784313725]</BackgroundColor>
+                <FontColor>[0.568627450980392 0.643137254901961 0.72156862745098]</FontColor>
+                <FontName>'Bahnschrift'</FontName>
+                <FontWeight>'bold'</FontWeight>
+                <Position>[838 204 140 22]</Position>
+                <Text>'DETECTED NOTE'</Text>
+            </Label>
+            <Label name='DetectedNoteLabel'>
+                <BackgroundColor>[0.0313725490196078 0.0509803921568627 0.0901960784313725]</BackgroundColor>
+                <FontColor>[0.941176470588235 0.956862745098039 0.972549019607843]</FontColor>
+                <FontName>'Bahnschrift'</FontName>
+                <FontSize>22</FontSize>
+                <FontWeight>'bold'</FontWeight>
+                <Position>[838 161 130 38]</Position>
+                <Text>'---'</Text>
+            </Label>
+            <Label name='FrequencyLabel'>
+                <BackgroundColor>[0.0313725490196078 0.0509803921568627 0.0901960784313725]</BackgroundColor>
+                <FontColor>[0.0862745098039216 0.850980392156863 0.92156862745098]</FontColor>
+                <FontName>'Bahnschrift'</FontName>
+                <FontSize>19</FontSize>
+                <FontWeight>'bold'</FontWeight>
+                <Position>[982 161 166 38]</Position>
+                <Text>'--- Hz'</Text>
+            </Label>
+            <Label name='StatusLabel'>
+                <BackgroundColor>[0.0313725490196078 0.0509803921568627 0.0901960784313725]</BackgroundColor>
+                <FontColor>[0.568627450980392 0.643137254901961 0.72156862745098]</FontColor>
+                <FontName>'Bahnschrift'</FontName>
+                <FontSize>12</FontSize>
+                <FontWeight>'normal'</FontWeight>
+                <Position>[838 116 310 26]</Position>
+                <Text>'Ready'</Text>
+            </Label>
+        </Children>
+    </UIFigure>
+    <RunConfiguration>
+        <StartupFcn>startupFcn</StartupFcn>
+    </RunConfiguration>
+    <AppDetails>
+        <Name>AudioRhythmGame</Name>
+        <Version>1.0</Version>
+    </AppDetails>
+    <InternalData>
+        <AppId>3565d1f8-16cc-42a5-b6d7-6d68e3fd8419</AppId>
+    </InternalData>
+    <!-- Thumbnail is used by file previewers. To change how the thumbnail is captured or stored, use the App Details dialog box in App Designer. -->
+    <Thumbnail autoCapture='true'>data:image/jpg;base64,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</Thumbnail>
+</MATLABApp>
